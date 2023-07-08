@@ -22,14 +22,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_material'
 html_static_path = ['_static']
 
-html_context = {
-    "conf_py_path" : '/docs/',
-    "display_github": True, # Integrate GitHub
-    "github_user": "snad-space", # Username
-    "github_repo": "coniferest", # Repo name
-    "github_version": "master",
+html_theme_options = {
+	'repo_url' : 'https://github.com/snad-space/coniferest',
+	'repo_name': 'coniferest',
+    'nav_title': 'coniferest'
 }
 

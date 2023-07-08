@@ -1,14 +1,31 @@
 {% extends "!layout.html" %}
-  {% block footer %} {{ super() }}
-
+  {% block header %} {{ super() }}
   <style>
     /* Sidebar header (and topbar for mobile) */
-    .wy-side-nav-search, .wy-nav-top {
+    nav.md-header-nav.md-grid {
+      background: #21104B;
+    }
+  </style>
+  {% endblock %}
+
+  {% block footer %} {{ super() }}
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    div.md-footer-nav {
+      background: #21104B;
+    }
+  </style>
+  {% endblock %}
+
+  {% block div %} {{ super() }}
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    nav.md-tabs {
       background: #FCBE44;
     }
-    /* Sidebar */
-    .wy-nav-side {
-      background: #21104B;
-    }	
   </style>
-{% endblock %}
+  {% endblock %}
+
+
+
+  
